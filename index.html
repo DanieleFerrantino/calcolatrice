@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+<!--  specifica la lingua del documento -->
+
+<head>
+    <!-- Intestazione del documento -->
+    <meta charset="UTF-8">
+    <!-- specifica il tipo di codifica utilizzato -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- specifica la compatibilità con il browser -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- collegamento al file di stile CSS -->
+    <script src="/assets/js/script.js"></script>
+    <!-- collegamento al file JavaScript -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- specifica il viewport per la visualizzazione su dispositivi mobili -->
+    <title>Calcolatrice</title>
+    <!-- titolo del documento -->
+</head>
+
+<body>
+    <!--  corpo del documento -->
+    <!-- contenitore che contiene tutta la calcolatrice -->
+    <div id="principale">
+        <!--  scatola del display -->
+        <div id="display">
+            <!-- display che mostra il risultato delle operazioni -->
+            <p id="displaynum">0</p>
+        </div>
+        <!-- scatola dei numeri e degli operatori -->
+        <div id="button">
+            <!-- prima riga di tasti -->
+            <div>
+                <button onclick="operatore('%')">%</button>
+                <button onclick="numero('7')">7</button>
+                <button onclick="numero('8')">8</button>
+                <button onclick="numero('9')">9</button>
+                <button onclick="operatore('/')">/</button>
+            </div>
+            <!-- seconda riga di tasti -->
+            <div>
+                <button onclick="reset()">AC</button>
+                <button onclick="numero('4')">4</button>
+                <button onclick="numero('5')">5</button>
+                <button onclick="numero('6')">6</button>
+                <button onclick="operatore('*')">*</button>
+            </div>
+            <!-- terza riga di tasti -->
+            <div>
+                <button onclick="operatore('+')">+</button>
+                <button onclick="numero('1')">1</button>
+                <button onclick="numero('2')">2</button>
+                <button onclick="numero('3')">3</button>
+                <button onclick="operatore('-')">-</button>
+            </div>
+            <!-- quarta riga di tasti -->
+            <div>
+                <button onclick="numero('0')">0</button>
+                <button onclick="operatore('=')">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

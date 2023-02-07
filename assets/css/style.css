@@ -1,0 +1,41 @@
+#principale {
+    width: 350px;
+    margin: 50px auto; /* centrato verticalmente e orizzontalmente rispetto al contenitore */
+    border-radius: 15px; /* bordo arrotondato */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* effetto ombra */
+    background-color: #eee; /* colore di sfondo */
+  }
+  
+  #display {
+    background-color: #ddd; /* colore di sfondo */
+    border-radius: 15px 15px 0 0; /* bordo arrotondato solo sulla parte superiore */
+    text-align: right; /* allineamento testo a destra */
+    padding: 20px; /* spaziatura interna */
+  }
+  
+  #display p {
+    font-size: 18px; /* dimensione carattere */
+    margin: 0; /* margine */
+  }
+  
+  #button {
+    background-color: #ccc; /* colore di sfondo */
+    display: flex; /* visualizzazione come elementi flessibili */
+    flex-wrap: wrap; /* wrap elementi se necessario */
+    border-radius: 0 0 15px 15px; /* bordo arrotondato solo sulla parte inferiore */
+  }
+  
+  #button button {
+    width: 75px; /* larghezza */
+    height: 60px; /* altezza */
+    border-radius: 5px; /* bordo arrotondato */
+    font-size: 18px; /* dimensione carattere */
+    margin: 10px; /* margine */
+    border: none; /* senza bordo */
+    outline: none; /* senza contorno */
+    cursor: pointer; /* cursore mano */
+  }
+  
+  #button button:hover {
+    background-color: #ddd; /* colore di sfondo al passaggio del mouse */
+  }
